@@ -1,5 +1,3 @@
-//Código criado para simular uma votação eleitoral, mostrando ao final os candidatos eleitos, os votos do eleitor e estatísticas. Código criado em C
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -20,9 +18,9 @@ int main (){
     while(contador==0){
     printf("SEJA BEM VINDO AS ELEIÇÕES 2018 TSEc!\n\nDigite seu número do título: \n");
     scanf("%d", &titulo);
-    printf("\nAgora, eleja o seu Deputado Estadual: \nSr. Adalberto (11)\nSra. Ana Guilherme (34)\nDra. Ana Rita (51)\n");
-    scanf("%d", &deputadoE);
-     
+    
+    printf("\nEscolha o seu Deputado Estadual: \nSr. Adalberto (11)\nSra. Ana Guilherme (34)\nDra. Ana Rita (51)\n");
+    scanf("%d", &deputadoE);   
     switch (deputadoE){
         case 51: anaRita++;
              printf("Você votou em Dra. Ana Rita\n\n"); break;
@@ -33,15 +31,14 @@ int main (){
         case 00: branco++;
              printf("Você votou em branco\n\n"); break;
         default: nulo++;
-             printf("Você votou nulo\n\n"); break;
-                 
+             printf("Você votou nulo\n\n"); break;              
     }
+    
     system("pause");
     system("cls");
        
-    printf("Agora, eleja o seu Deputado Federal: \nSr. Paulo Guilherme (33)\nSra. Ana Vitória (56)\n");
-    scanf("%d", &deputadoF);
-     
+    printf("Agora, escolha o seu Deputado Federal: \nSr. Paulo Guilherme (33)\nSra. Ana Vitória (56)\n");
+    scanf("%d", &deputadoF);     
     switch (deputadoF){
         case 56: anaVitoria++; 
              printf("Você votou em Sra. Ana Vitória\n\n"); break;
@@ -56,9 +53,8 @@ int main (){
     system("pause");
     system("cls");  
 
-    printf("Agora, eleja o seu Senador: \nSr. Gutemberg Silva (04)\nSr. Fernando Fernandes (67)\n");
-    scanf("%d", &senador);
-     
+    printf("Agora, escolha o seu Senador: \nSr. Gutemberg Silva (04)\nSr. Fernando Fernandes (67)\n");
+    scanf("%d", &senador); 
     switch (senador){
         case 04: gutemberg++; 
              printf("Você votou em Sr. Gutemberg Silva\n\n"); break;
@@ -68,10 +64,10 @@ int main (){
              printf("Você votou em branco\n\n"); break;
         default: nulo++;
              printf("Você votou nulo\n\n"); break;
-}
-    printf("Agora, eleja o seu Governador: \nSr. Maia de Ana (38)\nSra. Dona Selma (18)\nSr. Gentil (40)\n");
+    }
+    
+    printf("Agora, escolha o seu Governador: \nSr. Maia de Ana (38)\nSra. Dona Selma (18)\nSr. Gentil (40)\n");
     scanf("%d", &governador);
-     
     switch (governador){
         case 38: maia++;
              printf("Você votou em Sr. Maia de Ana\n\n"); break;
@@ -83,10 +79,10 @@ int main (){
              printf("Você votou em branco\n\n"); break;
         default: nulo++;
              printf("Você votou nulo\n\n"); break;
-}    
-    printf("Finalmente, eleja o seu Presidente: \nSra. Maeli (17)\nSr. Antônio (22)\nSr. Lissandro (31)\n");
+    }
+    
+    printf("Finalmente, escolha o seu Presidente: \nSra. Maeli (17)\nSr. Antônio (22)\nSr. Lissandro (31)\n");
     scanf("%d",&presidente);
-     
     switch (presidente){
         case 17: maeli++;
              printf("Você votou em Sra. Maeli\n\n"); break;
@@ -101,10 +97,9 @@ int main (){
              
         system("pause");
         system("cls");
-    
+    }
 }
-}
-    //FINAL DE VOTAÇÃO, APARIÇÃO DO ESPELHO
+
     printf("FINAL DE VOTAÇÃO \nConfira agora seus dados e seus candidatos escolhidos: ");
     presidente==17 ?: printf("Você votou em Maeli para presidente\n");
     presidente==22 ?: printf("Você votou em Antônio para presidente\n");
@@ -136,5 +131,5 @@ int main (){
     
     system("pause");
 }   
-    //DEMONSTRACAO DOS RESULTADOS
+ 
 
